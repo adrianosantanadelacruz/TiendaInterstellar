@@ -16,7 +16,7 @@ body {
     /* Flexbox vertical para empujar el footer al fondo */
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
 }
 
 /* =========================================
