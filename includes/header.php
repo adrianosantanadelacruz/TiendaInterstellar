@@ -1,5 +1,7 @@
 <?php
-if (session_status() === PHP_SESSION_NONE) { session_start(); }
+if (session_status() === PHP_SESSION_NONE) {
+    session_start();
+}
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -11,8 +13,8 @@ if (session_status() === PHP_SESSION_NONE) { session_start(); }
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
 
-    <!-- CSS PRINCIPAL (ruta fija y correcta) -->
+    <!-- CSS PRINCIPAL (ruta correcta en producción) -->
     <link rel="stylesheet" href="/assets/css/style.css?v=2">
-
 </head>
+
 <body>
