@@ -144,8 +144,9 @@ body {
 .capsula-estelar {
     max-width: 800px;
     width: 90%;
-    margin: 50px auto;
-    padding: 40px;
+    /* Cambiamos el 50px por 20px arriba/abajo para que no empuje tanto */
+    margin: 20px auto; 
+    padding: 30px; /* Reducimos un poco el padding interno */
     background: rgba(0, 0, 0, 0.75);
     border: 1px solid #00eaff;
     border-radius: 20px;
@@ -154,7 +155,6 @@ body {
     backdrop-filter: blur(10px);
     text-align: center;
 }
-
 .capsula-estelar h2 {
     color: #00eaff;
     margin-bottom: 20px;
@@ -252,4 +252,34 @@ footer .container {
 textarea {
     resize: none; /* Evita que el usuario deforme la cápsula estelar */
     font-size: 1rem;
+}
+/* =========================================
+   7. AJUSTES PARA MÓVIL (NUEVO)
+   ========================================= */
+@media (max-width: 768px) {
+    body {
+        /* Cambiamos space-between por flex-start para que los elementos 
+           no se alejen tanto entre sí en pantallas pequeñas */
+        justify-content: flex-start; 
+    }
+
+    .header {
+        padding: 10px 20px;
+        flex-direction: column; /* Apila el logo y el menú si no caben */
+        gap: 10px;
+    }
+
+    .capsula-estelar {
+        margin: 15px auto; /* Margen mínimo en móvil */
+        padding: 20px;
+    }
+
+    .capsula-estelar h2 {
+        font-size: 1.2rem; /* Título más pequeño */
+    }
+
+    .btn-neon {
+        padding: 10px 20px;
+        font-size: 0.8rem;
+    }
 }
